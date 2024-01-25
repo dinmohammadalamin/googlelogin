@@ -46,6 +46,9 @@
             <div>
                 <a style="background-color:skyblue;" href="{{url('auth/google')}}">Login with Google</a>
             </div>
+            <div>
+                <a style="background-color:skyblue;" href="{{url('auth/github')}}">Login with GITHUB</a>
+            </div>
         </form>
     </x-authentication-card>
 </x-guest-layout>

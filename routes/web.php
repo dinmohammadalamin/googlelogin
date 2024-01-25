@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\http\Controllers\GoogleController;
+use App\http\Controllers\githubController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +31,7 @@ Route::middleware([
 
 Route::get('auth/google',[GoogleController::class,'googlepage']);
 Route::get('auth/google/callback',[GoogleController::class,'googlecallback']);
+
+
+Route::get('auth/github',[githubController::class,'githubpage']);
+Route::get('auth/github/callback',[githubController::class,'githubcallback']);
